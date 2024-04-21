@@ -12,6 +12,56 @@ body {
 background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #171047;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+/*.Groups{
+  text-align:center;
+  color: #fff;
+
+}*/
 .AboutMe{
   text-align:center;
   color: #fff;
@@ -84,7 +134,7 @@ background-attachment: fixed;
 
 /* Footer Section */
 .footer {
-  background-color: #333;
+  background-color: #32376a52;
   color: #fff;
   padding: 50px 0;
   text-align: center;
