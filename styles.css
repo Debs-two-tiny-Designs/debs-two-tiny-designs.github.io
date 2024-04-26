@@ -1,17 +1,20 @@
 /* Reset */
+/*@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.body {
   background-image: url('sample.jpg');
   background-size: 100% 100%;
   background-position: center;
-background-attachment: fixed;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
+
 
 .container {
   max-width: 1200px;
@@ -20,7 +23,7 @@ background-attachment: fixed;
 
 /* Navbar */
 .navbar {
-  background-color: #171047;
+  background-color: #171047 !important; /* Use !important to override Bootstrap */
   color: #fff;
   padding: 20px 0;
 }
@@ -57,39 +60,34 @@ background-attachment: fixed;
 .nav-links a:hover {
   color: #3498db;
 }
-/*.Groups{
-  text-align:center;
-  color: #fff;
 
-}*/
-.AboutMe{
-  text-align:center;
+/* About Me */
+.AboutMe {
+  text-align: center;
   color: #fff;
-
 }
 
 /* Hero Section */
 .hero {
   height: 100vh;
   color: #fff;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content {
   text-align: center;
-  color: #fff;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #fff;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 40px;
-  color: #fff;
 }
 
 .hero-content a {
@@ -106,73 +104,142 @@ background-attachment: fixed;
   background-color: #2980b9;
 }
 
+#carousel-section {
+  padding: 50px; /* Add padding to the carousel section */
+  padding-bottom: 350px;
+
+}
+
+#image-carousel {
+  width: 700px; /* Set width for carousel */
+  height: 350px; /* Set height for carousel */
+  margin: auto; /* Center the carousel */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Custom styles for carousel */
+.carousel-item img {
+  object-fit:cover; /* Cover the entire carousel area */
+  margin: 0; /* Remove default margin */
+}
+
+/* Custom styles for section title */
+.section-title {
+  font-size: 2rem; /* Adjust title font size */
+  color: #333; /* Set title color */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+
+/* Custom styles for section title */
+.section-title {
+  font-size: 2rem; /* Adjust title font size */
+  color: #333; /* Set title color */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+
+/* About Me Section Styles */
+.about-me {
+  padding: 150px 0; /* Add padding */
+}
+
+.section-title {
+  font-size: 2rem; /* Adjust title font size */
+  color: #ebe1e1; /* Set title color */
+  text-align: center; /* Center align title */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.section-content {
+  font-size: 1.2rem; /* Adjust content font size */
+  color: #f0d6d6; /* Set content color */
+  text-align: center; /* Center align content */
+}
+
 /* Projects Section */
 .projects {
-  padding: 50px 0;
-  color: #fff;
+  padding: 200px 0;
 }
 
-.project-container {
-  display: flex;
-  justify-content: space-around;
-  color: #fff;
+.card {
+  border: none; /* Remove border */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-.project {
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  margin-bottom: 20px;
+.card-body {
+  text-align: center; /* Center align content */
+  overflow: hidden;
 }
 
-.project h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.card-title {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 10px; /* Add margin bottom */
 }
+
+.card-text {
+  font-size: 1rem; /* Adjust font size */
+}
+
 
 /* Footer Section */
 .footer {
-  background-color: #32376a52;
+  background-color: #999fe052;
   color: #fff;
-  padding: 50px 0;
+  padding: 10px 0;
   text-align: center;
+  font-size: x-small;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a slight depth effect */
 }
 
 .contact-form h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #570303; /* Darker text color */
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form button {
-  display: block;
+.contact-form textarea{
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s ease;
+  font-size: 1rem; /* Reduce the font size */
 }
-
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3498db; /* Highlight border color when input is focused */
+}
 .contact-form textarea {
-  height: 150px;
+  height: 100px;
 }
-
 .contact-form button {
-  background-color: #3498db;
-  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db; /* Button color */
+  color: #fff; /* Button text color */
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Darker button color on hover */
 }

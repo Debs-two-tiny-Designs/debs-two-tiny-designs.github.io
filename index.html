@@ -4,84 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="body">
 
-  <nav class="navbar">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <h1 class="logo">TwoTinyDesigns</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact-form">Contact</a></li>
-        <li><a href="#facebook">Facebook</a></li>
-        <li><a href="#instagram">instagram</a></li>
-        <li><a href="#linkedin">LinkedIn</a></li>
+      <a class="navbar-brand" href="#">TwoTinyDesigns</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#AboutMe">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facebook">Facebook</a></li>
+        <li class="nav-item"><a class="nav-link" href="#instagram">Instagram</a></li>
+        <li class="nav-item"><a class="nav-link" href="#linkedin">LinkedIn</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Two Tiny Designs</h1>
-      <p>Hello and welcome to my Portfolio!</p>
-      <p> This website is currently under construction. Please visit again later to see the progress. Thank you for your patience.</p>
-      <!--<p>Do explore my work below</p>
-     <a href="#Group">Group Projects</a>-->
-      <a href="#projects">My works</a>
-      <a href="#theotherside">The other side</a>
-      <br><br>
-      <br>
-      
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="#AboutMe" class="#AboutMe">
-    <div class="AboutMe-container">
-      <div class="AboutMe">
-        <h2>About Me</h2><br>
-        <p>My name is Deboleena, and I love to design products for users, to make their life simpler and easier to work on</p><br><br><br><br><br>
-      </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="project-container">
-      <div class="project">
-        <h2><b>Smart Itinerant</b></h2>
-        <p>A smart travel app for one stop solution</p>
-      </div>
-      <div class="project">
-        <h2>Harvest Street</h2>
-        <p>A mobile app to share food surplus</p>
-      </div>
-      <div class="project">
-        <h2>Redesigns</h2>
-        <p>Website Redesigns</p>
-      </div>
-      <div class="project">
-        <h2>Muzikal</h2>
-        <p>Music app for smart watch</p>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Two Tiny Designs</h1>
+        <p>Hello and welcome to my Portfolio!</p>
+        <p>This website is currently under construction. Please visit again later to see the progress. Thank you for your patience.</p>
+        <!--<p>Do explore my work below</p>
+        <a href="#Group">Group Projects</a>-->
+        <a class="btn btn-primary" href="#projects">My Works</a>
+        <a class="btn btn-secondary" href="#carousel-section">The Other Side</a>
       </div>
     </div>
   </section>
+
+ <!-- About Me Section -->
+<section id="AboutMe" class="about-me">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-content">My name is Deboleena, and I love to design products for users, to make their life simpler and easier to work on.Please have a look at some of my UX work below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="section-title">My UX Works</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title"><b>Smart Itinerant</b></h2>
+            <iframe src="https://www.youtube.com/embed/jCna-ynr1Fg" width="100%" height="70%" allowfullscreen></iframe>
+            <p class="card-text">A smart travel app for one stop solution</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title"><b>Harvest Street</b></h2>
+            <iframe src="samplevideo.mp4" width="100%" height="70%" allowfullscreen></iframe>
+            <p class="card-text">A mobile app to share food surplus</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title"><b>Redesigns</b></h2>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ4Ov_XdtvHf3NddRfn9o3Qq-N2enKK8ey1CR630VzuUYaDOnYK4ZZo5BxgQ9QfDg/embed?start=false&loop=false&delayms=3000" width="100%" height="70%"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <p class="card-text">Website Redesigns</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title"><b>Muzikal</b></h2>
+            <iframe src="https://www.youtube.com/embed/8DB2K9jHK48" width="100%" height="70%" allowfullscreen></iframe>
+            <p class="card-text">Music app for smart watch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section with Title -->
+<section id="carousel-section">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">The Other Side of Me</h2>
+
+    <!-- Carousel Section -->
+    <div id="image-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="container">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image1.jpg" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="image2.jpg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="image3.jpg" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
   <!-- Footer Section -->
   <footer class="footer">
-    <div class="contact-form">
-      <h3>Contact Me</h3>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+    <div class="container">
+      <div id="contact-form" class="contact-form">
+        <h3>Contact Me</h3>
+        <form action="send_email.php" method="post">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
     </div>
+    <p>Website designed by Debbie</p>
   </footer>
-
 </body>
 </html>
