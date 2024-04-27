@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css">
@@ -16,11 +17,13 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#AboutMe">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-me-container">About Me</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="#facebook">Facebook</a></li>
-        <li class="nav-item"><a class="nav-link" href="#instagram">Instagram</a></li>
-        <li class="nav-item"><a class="nav-link" href="#linkedin">LinkedIn</a></li>
+      </ul>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>
   </nav>
@@ -39,22 +42,24 @@
       </div>
     </div>
   </section>
-
- <!-- About Me Section -->
-<section id="AboutMe" class="about-me">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-content">My name is Deboleena, and I love to design products for users, to make their life simpler and easier to work on.Please have a look at some of my UX work below.</p>
-      </div>
+  
+  <div id = "about-me-container" class ="about-me-container">
+    <div class="profile-picture">
+      <!-- Add your profile picture here -->
+      <img src="sample.png" alt="Profile Picture">
+    </div>
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>My name is Deboleena, and I love to design products for users, to make their life simpler and easier to work on.I have led a variety of projects, ranging from creating a user-friendly travel app to promoting community involvement with a unique surplus food-sharing platform. Furthermore, I have applied my design skills to improve the online presence of a mental health-focused non-profit organization and to enhance the user experience of the Australian defense website. Additionally, I have demonstrated my technical proficiency by independently developing a personal website using HTML, CSS, and Javascript, underscoring my commitment to both design and development.</p>
+    <p>Please have a look at some of my UX work below.</p>
     </div>
   </div>
-</section>
 
- <!-- Projects Section -->
+
+
+  <!--Projects Section -->
 <section id="projects" class="projects">
-  <h2 class="section-title">My UX Works</h2>
+  <h2 class="section-mywork">My UX Works</h2>
   <div class="container">
     <div class="row">
       <div class="col-md-3">
