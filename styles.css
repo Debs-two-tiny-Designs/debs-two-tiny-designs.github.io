@@ -105,10 +105,10 @@
   background-color: #2980b9;
 }
 
-#carousel-section {
+.carousel-section {
   padding: 50px; /* Add padding to the carousel section */
   padding-bottom: 350px;
-
+  text-align: center;
 }
 
 #image-carousel {
@@ -127,14 +127,6 @@ margin-left:700px
   object-fit:cover; /* Cover the entire carousel area */
   margin: 0; /* Remove default margin */
 }
-
-/* Custom styles for section title */
-.section-title {
-  font-size: 2rem; /* Adjust title font size */
-  color: #333; /* Set title color */
-  margin-bottom: 20px; /* Add margin bottom */
-}
-
 
 /* Custom styles for section title */
 .section-title {
@@ -190,6 +182,7 @@ margin-left:700px
 /* Projects Section */
 .projects {
   padding: 200px 0;
+  text-align: center;
 }
 
 .card {
@@ -272,4 +265,169 @@ margin-left:700px
 
 .contact-form button:hover {
   background-color: #2980b9; /* Darker button color on hover */
+}
+
+/* Media Queries */
+/* Mobile Devices (up to 576px) */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .social-media li a {
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .carousel-section {
+    padding: 20px;
+    padding-bottom: 200px;
+  }
+
+  .section-mywork {
+    margin-left: 0;
+  }
+
+  #image-carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
+
+  .projects {
+    padding: 80px 0;
+  }
+}
+
+/* Tablet Devices (between 576px and 992px) */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .social-media li a {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-section {
+    padding: 40px;
+    padding-bottom: 250px;
+  }
+
+  .section-mywork {
+    margin-left: 0;
+  }
+
+  #image-carousel {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text {
+    text-align: center;
+  }
+
+  .projects {
+    padding: 120px 0;
+  }
+}
+
+/* Laptop Devices (between 992px and 1200px) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-section {
+    padding: 50px;
+    padding-bottom: 300px;
+  }
+
+  .about-me-container {
+    max-width: 700px;
+  }
+
+  .projects {
+    padding: 150px 0;
+  }
+}
+
+/* Desktop Devices (above 1200px) */
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+
+  .carousel-section {
+    padding: 60px;
+    padding-bottom: 350px;
+  }
+
+  .about-me-container {
+    max-width: 800px;
+  }
+
+  .projects {
+    padding: 200px 0;
+  }
 }
